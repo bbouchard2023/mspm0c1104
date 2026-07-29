@@ -10,3 +10,6 @@ website = ""
 tags = []
 
 executables = ["mspm0c1104"]
+
+[[depends-on]]
+gnat_arm_elf = "^15.3.1"

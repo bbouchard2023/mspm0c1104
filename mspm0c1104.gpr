@@ -6,6 +6,8 @@ project Mspm0c1104 is
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
    for Main use ("mspm0c1104.adb");
+   for Target use "arm-elf";
+   for Runtime ("Ada") use "light-cortex-m0p";
 
    package Compiler is
       for Default_Switches ("Ada") use Mspm0c1104_Config.Ada_Compiler_Switches;
